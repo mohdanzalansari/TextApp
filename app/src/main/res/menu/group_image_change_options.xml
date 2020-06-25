@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/change_group_image_box"
+        android:title="Change Image"/>
+    <item
+        android:id="@+id/remove_group_image_box"
+        android:title="Remove Image"/>
+
+</menu>

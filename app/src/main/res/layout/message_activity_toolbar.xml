@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#651FFF">
+
+
+    <RelativeLayout
+        android:id="@+id/profile_rel_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="7dp"
+            android:src="@drawable/default_profile_image" />
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="13dp"
+            android:layout_toEndOf="@+id/profile_image"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Name"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/groupexitbuttonBox"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="22dp"
+            app:srcCompat="@android:drawable/ic_lock_power_off" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/option_rel_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/select_count_box"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@id/deselect_selected_btn_img"
+            android:layout_marginEnd="-36dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="5"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/deselect_selected_btn_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            app:srcCompat="@android:drawable/btn_dialog" />
+
+        <ImageView
+            android:id="@+id/reply_button_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@id/del_selected_btn_img"
+            android:layout_marginStart="-58dp"
+            app:srcCompat="@android:drawable/arrow_up_float" />
+
+        <ImageView
+            android:id="@+id/del_selected_btn_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@id/fowr_selected_btn_img"
+            android:layout_marginStart="-57dp"
+            app:srcCompat="@android:drawable/ic_menu_delete" />
+
+        <ImageView
+            android:id="@+id/fowr_selected_btn_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@android:drawable/arrow_down_float" />
+
+    </RelativeLayout>
+
+
+</androidx.appcompat.widget.Toolbar>
